@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+PIG2SQL_HOME="$PWD"
+PIG2SQL_CLASSPATH="$PIG2SQL_HOME/target/*:$PIG2SQL_HOME/target/lib/*:$PIG2SQL_HOME/target/classes"
+
+java -cp $PIG2SQL_CLASSPATH com.github.jcamachor.pig2sql.Driver "$@"
