@@ -33,7 +33,7 @@
     <hadoop.version>3.1.0</hadoop.version>
     <hive.version>3.1.2</hive.version>
     <log4j2.version>2.13.3</log4j2.version>
-    <pig.version>0.17.0</pig.version>
+    <pig.version>0.16.0</pig.version>
     <protobuf.version>3.12.2</protobuf.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -115,6 +115,18 @@
         <exclusion>
           <groupId>log4j</groupId>
           <artifactId>log4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.calcite</groupId>
+          <artifactId>calcite-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.calcite</groupId>
+          <artifactId>calcite-druid</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.calcite.avatica</groupId>
+          <artifactId>avatica</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
